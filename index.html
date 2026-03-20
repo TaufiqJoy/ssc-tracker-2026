@@ -3,55 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSC Tracker</title>
+    <title>SSC Exam Tracker | Premium Countdown</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
     <div class="container">
         <div class="timer-card">
             <div class="header">
-                <div class="exam-badge">🎓 UPCOMING EXAM</div>
+                <div class="exam-badge">Upcoming Exam</div>
                 <h1>SSC Tracker</h1>
-                <p class="exam-details">SSC Examination</p>
-                <p class="exam-date">📅 21 April 2026 | ⏰ 10:00 AM</p>
+                <p class="exam-details">Secondary School Certificate Examination</p>
+                <div class="exam-date">
+                    <span>📅 21 April 2026</span>
+                    <span>⏰ 10:00 AM</span>
+                </div>
             </div>
 
             <div id="countdown-container" class="countdown">
                 <div class="time-box">
-                    <div class="time-value" id="days">00</div>
-                    <div class="time-label">Days</div>
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-label">Days</span>
                 </div>
                 <div class="time-box">
-                    <div class="time-value" id="hours">00</div>
-                    <div class="time-label">Hours</div>
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Hours</span>
                 </div>
                 <div class="time-box">
-                    <div class="time-value" id="minutes">00</div>
-                    <div class="time-label">Minutes</div>
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
                 </div>
                 <div class="time-box">
-                    <div class="time-value" id="seconds">00</div>
-                    <div class="time-label">Seconds</div>
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
                 </div>
             </div>
 
             <div id="completion-message" class="completion-message">
-                <div class="emoji">🎓</div>
-                <div class="completion-text">Best of Luck for Your SSC Exam!</div>
+                <div class="emoji">🎉</div>
+                <h2 class="completion-text">Best of Luck!</h2>
                 <div class="motivational-text">
-                    "Success is the sum of small efforts repeated day in and day out. You've got this!"
+                    "Success is not final, failure is not fatal: it is the courage to continue that counts."
                 </div>
             </div>
 
-            <div id="motivational-section" class="motivational-text">
-                Loading...
-            </div>
-
-            <div class="footer">
-                  
+            <div id="motivational-section">
+                <!-- Quotes will be injected here -->
             </div>
         </div>
     </div>
